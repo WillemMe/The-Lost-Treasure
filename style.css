@@ -1,0 +1,156 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #000;
+  color: #eee;
+  font-family: 'Source Code Pro', monospace;
+}
+/*------------------------ Zoom holder ------------------------*/
+.zoom{
+  height: 4vh;
+  width: 5vw;
+  margin: 1vh 1vw 0 95vw;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+}
+.zoom p a{
+  display: inline-block;
+  float: left;
+  font-size: 30px !important;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+#plus{
+  cursor: zoom-in;
+  margin-right: 10px;
+}
+#min{
+  cursor: zoom-out;
+}
+
+/*------------------------ Terminal ------------------------*/
+.terminalHolder{
+  height: 90vh;
+  width: 97vw;
+  margin-left: 3vw;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+#title{
+  margin-top: 2vw;
+  width: 50vw;
+}
+#terminal{
+  height: 65vh;
+  width: 99vw;
+  line-height: 150%;
+  overflow-y: auto;
+  position: absolute;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  z-index: 0;
+}
+/*------------------------ Fight holder ------------------------*/
+.fightholder{
+  height: 65vh;
+  width: 110%;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+.playerStat, .enemyStat{
+  height: 20vh;
+  width: 20vw;
+}
+.playerStat{
+  margin: 45vh 0 0 0;
+  float: left;
+}
+.enemyStat{
+  margin: 15vh 10vw 0 0;
+  float: right;
+}
+.playerImg, .playerImg img{
+  height: 15vh;
+  max-width: 100%;
+}
+.enemyImg, .enemyImg img{
+  height: 15vh;
+  max-width: 100%;
+}
+.playerHpHolder, .enemyHpHolder{
+  height: 5vh;
+  width: 20vw;
+  position: relative;
+}
+.playerHpHolder p, .enemyHpHolder p{
+  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  line-height: 5vh;
+}
+.playerHealth, .enemyHealth{
+  height:100%;
+  width:100%;
+  background-color:#eee
+}
+/*------------------------ Alert ------------------------*/
+.alertDialog{
+  width: 30vw;
+  height: 15vh;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+  border-style: solid;
+  border-color: #CCC;
+  border-width: 5px;
+}
+.alertDialog p{
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+/*------------------------ Options ------------------------*/
+#options{
+  height: 14vh;
+  width: 90vw;
+  margin-top: 67vh;
+  overflow-y: auto;
+  position: relative;
+  display: inline-block;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+#options td{
+  padding-right: 10px;
+}
+/*------------------------ Input ------------------------*/ 
+#cmdLine{
+  height: 5vh;
+  width: 95vw;
+  float: right;
+  border: none;
+  background-color: #000;
+  color: #eee;
+}
+label:before{
+  height: 5vh;
+  line-height: 5vh;
+  content: ">";
+  float: right;
+  margin-right: 2vw;
+}
