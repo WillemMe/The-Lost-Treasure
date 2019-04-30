@@ -1,6 +1,8 @@
 # The-Lost-Treasure
 A JavaScript command line style game
 
+[The Lost Treasure](http://willemme.com/thelosttreasure/)
+
 <img src="Gif.gif?raw=true" width="80%" >
 
 ## Motivation
